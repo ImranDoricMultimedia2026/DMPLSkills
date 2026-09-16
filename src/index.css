@@ -2,9 +2,9 @@
 
 @layer base {
   :root {
-    --brand-primary: #9d3626;
-    --brand-primary-hover: #82291b;
-    --brand-primary-light: #b34130;
+    --brand-primary: #ff9933;
+    --brand-primary-hover: #ff9933;
+    --brand-primary-light: #ff9933;
     --brand-subtle: #fdf3f1;
     --brand-border: #f8c8c1;
     --navy-dark: #0a1128;
@@ -34,7 +34,7 @@
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #9d3626;
+  background: #ff9933;
 }
 @keyframes fadeIn {
   from {
