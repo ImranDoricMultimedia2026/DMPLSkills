@@ -12,6 +12,7 @@ import {
   Sparkles,
   CheckCircle2,
   Quote,
+  BookOpen,
 } from 'lucide-react';
 
 const AboutPreviewSection: React.FC = () => {
@@ -80,7 +81,7 @@ const AboutPreviewSection: React.FC = () => {
               <span className="h-[2px] w-9 rounded-full bg-[#ff9933]" />
 
               <span className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#ff9933]">
-                About Doric Skills
+                About DMPL Skills
               </span>
 
               <span className="h-[2px] w-9 rounded-full bg-[#138808]/70" />
@@ -98,7 +99,7 @@ const AboutPreviewSection: React.FC = () => {
             {/* Description */}
             <div className="mt-7 max-w-xl space-y-4 text-[15px] leading-7 text-slate-600 sm:text-base">
               <p>
-                Doric Skills is a trusted training partner working with
+                DMPL Skills is a trusted training partner working with
                 National and State Skill Development Missions, Ministries and
                 Sector Skill Councils to deliver industry-relevant,
                 job-oriented training programmes.
@@ -208,7 +209,7 @@ const AboutPreviewSection: React.FC = () => {
 
                 <img
                   src="/images/about-skills.jpg"
-                  alt="Doric Skills skill development and training"
+                  alt="DMPL Skills skill development and training"
                   className="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
                 />
 
@@ -358,7 +359,7 @@ const AboutPreviewSection: React.FC = () => {
             </div>
 
             <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.16em] text-slate-400">
-              <Sparkles className="h-3.5 w-3.5 text-[#ff9933]" />
+             <BookOpen className="h-3.5 w-3.5 text-[#ff9933]" />
               Empowering India Through Skills
             </div>
           </div>

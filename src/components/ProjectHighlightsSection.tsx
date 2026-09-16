@@ -50,7 +50,7 @@ const ProjectHighlightsSection: React.FC = () => {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-[#ff9933]" />
             </span>
 
-            <Sparkles size={13} className="text-[#ff9933]" />
+            {/* <Sparkles size={13} className="text-[#ff9933]" /> */}
 
             <span className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#12335f]">
               Project Highlights

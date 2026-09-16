@@ -103,7 +103,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
               >
                 About
                 <span className="block text-[#ff9933] mt-2">
-                  Doric Skills
+                  DMPL Skills
                 </span>
               </h1>
 
@@ -292,7 +292,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
               </p>
 
               <p className="mt-4 text-sm sm:text-base text-slate-600 leading-relaxed">
-                Operating across diverse Indian economic clusters, Doric
+                Operating across diverse Indian economic clusters, DMPL
                 Skills coordinates with public qualification benchmarks and
                 local employment corridors. Our goal is to ensure every
                 trainee acquires verifiable, demonstrable capabilities that
@@ -321,7 +321,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                     </strong>
 
                     <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
-                      Doric Skills operates as a private vocational skilling
+                      DMPL Skills operates as a private vocational skilling
                       entity. Official corporate registration numbers and
                       regional accreditation details are maintained in
                       structured records and updated upon verification.
@@ -361,7 +361,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
 
                   <img
                     src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
-                    alt="Doric Skills Team and Training Facility"
+                    alt="DMPL Skills Team and Training Facility"
                     className="
                       w-full h-full
                       object-cover
@@ -985,7 +985,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
       </section>
 
       {/* ========================================================= */}
-      {/* WHY DORIC SKILLS */}
+      {/* WHY DMPL SKILLS */}
       {/* ========================================================= */}
       <WhyUsSection />
 
@@ -1013,7 +1013,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
           <h3 className="text-3xl sm:text-4xl font-heading font-extrabold text-white">
             Interested in Collaborating
             <span className="block text-[#ff9933] mt-1">
-              with Doric Skills?
+              with DMPL Skills?
             </span>
           </h3>
 

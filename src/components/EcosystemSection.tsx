@@ -18,6 +18,7 @@ import {
   Factory,
   Building2,
   ShieldCheck,
+  BookOpen,
 } from 'lucide-react';
 
 interface EcosystemItem {
@@ -116,7 +117,7 @@ const ecosystemItems: EcosystemItem[] = [
     id: 'beauty-and-wellness',
     name: 'Beauty & Wellness SSC',
     shortName: 'Beauty & Wellness',
-    icon: Sparkles,
+    icon: BookOpen,
     category: 'Sector Skill Council',
     projects: 1,
     firstProjectId: 'nsfdc-2018-19',

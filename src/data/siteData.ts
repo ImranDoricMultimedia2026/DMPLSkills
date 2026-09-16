@@ -157,10 +157,10 @@ export const programsData: ProgramItem[] = [
 ];
 
 /**
- * WHY DORIC SKILLS - SIX CORE PILLARS
+ * WHY DMPL SKILLS - SIX CORE PILLARS
  * Transparent, realistic institutional values with no exaggerated guarantees.
  */
-export const whyDoricData: BenefitItem[] = [
+export const whyDMPLData: BenefitItem[] = [
   {
     id: 'why-trainers',
     title: 'Experienced Trainers',
@@ -204,7 +204,7 @@ export const whyDoricData: BenefitItem[] = [
  */
 export const generalFaqs = [
   {
-    question: 'How do I apply for a training program at Doric Skills?',
+    question: 'How do I apply for a training program at DMPL Skills?',
     answer: 'You can submit an enquiry through our online portal by clicking "Enquire Now" or by visiting our Contact page. Our program counselor will contact you to discuss eligibility, upcoming batch schedules, and center locations.'
   },
   {
@@ -216,11 +216,11 @@ export const generalFaqs = [
     answer: 'Yes, all enrolled candidates receive structured learner workbooks, digital study materials, and access to dedicated computer lab workstations during their training hours.'
   },
   {
-    question: 'Does Doric Skills guarantee employment?',
-    answer: 'Doric Skills focuses on high-quality skill building, portfolio creation, and interview readiness. While we provide career counseling, industry exposure, and placement guidance, we maintain a transparent, ethical policy and do not make false claims of guaranteed placement.'
+    question: 'Does DMPL Skills guarantee employment?',
+    answer: 'DMPL Skills focuses on high-quality skill building, portfolio creation, and interview readiness. While we provide career counseling, industry exposure, and placement guidance, we maintain a transparent, ethical policy and do not make false claims of guaranteed placement.'
   },
   {
-    question: 'Can government or CSR bodies partner with Doric Skills for institutional skilling?',
-    answer: 'Yes. Doric Skills collaborates with institutional stakeholders, CSR foundations, and government departments for skill project delivery. Please submit an institutional enquiry through our Contact page.'
+    question: 'Can government or CSR bodies partner with DMPL Skills for institutional skilling?',
+    answer: 'Yes. DMPL Skills collaborates with institutional stakeholders, CSR foundations, and government departments for skill project delivery. Please submit an institutional enquiry through our Contact page.'
   }
 ];

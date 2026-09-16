@@ -1,7 +1,7 @@
 import { GalleryProject } from '../types';
 
 /**
- * DORIC SKILLS — REAL PROJECT GALLERY
+ * DMPL SKILLS — REAL PROJECT GALLERY
  *
  * Actual project/photo albums.
  * No dummy images, captions, locations or fabricated information.

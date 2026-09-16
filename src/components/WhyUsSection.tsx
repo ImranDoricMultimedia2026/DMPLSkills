@@ -8,7 +8,7 @@ import {
   Building2,
   ArrowUpRight,
 } from 'lucide-react';
-import { whyDoricData } from '../data/siteData';
+import { whyDMPLData } from '../data/siteData';
 
 export const WhyUsSection: React.FC = () => {
   const getIcon = (id: string) => {
@@ -41,7 +41,7 @@ export const WhyUsSection: React.FC = () => {
 
   return (
     <section
-      id="why-doric-skills"
+      id="why-DMPL-skills"
       className="relative overflow-hidden bg-slate-50 py-20 sm:py-24 lg:py-28"
     >
       {/* =========================================================
@@ -90,7 +90,7 @@ export const WhyUsSection: React.FC = () => {
               </div>
 
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">
-                Doric Skills Framework
+                DMPL Skills Framework
               </span>
             </div>
           </div>
@@ -121,7 +121,7 @@ export const WhyUsSection: React.FC = () => {
         ========================================================= */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-          {whyDoricData.map((item, index) => (
+          {whyDMPLData.map((item, index) => (
             <article
               key={item.id}
               className="group relative min-h-[290px] bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-[0_8px_30px_rgba(15,35,65,0.045)] hover:shadow-[0_20px_50px_rgba(15,35,65,0.10)] hover:-translate-y-1 transition-all duration-500"
@@ -168,7 +168,7 @@ export const WhyUsSection: React.FC = () => {
                 {/* Footer */}
                 <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between gap-3">
                   <span className="text-[10px] sm:text-[11px] uppercase tracking-wider font-semibold text-slate-400">
-                    Doric Skills
+                    DMPL Skills
                   </span>
 
                   <span className="inline-flex items-center gap-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-[#12335f] group-hover:text-[#ff9933] transition-colors">

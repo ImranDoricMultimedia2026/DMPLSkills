@@ -30,6 +30,7 @@ import {
   Handshake,
   Factory,
 } from 'lucide-react';
+import { projectsData } from '../data/projects';
 
 
 interface NavbarProps {
@@ -61,377 +62,144 @@ interface ProjectDepartment {
    PROJECT DATA — Full hierarchy (16 Departments)
    ========================================================= */
 
-const projectDepartments: ProjectDepartment[] = [
-  /* 01. NATIONAL SKILL DEVELOPMENT MISSION */
+const departmentMeta: Record<
+  string,
   {
-    id: 'national-skill-development-mission',
+    name: string;
+    shortName: string;
+    icon: React.ElementType;
+  }
+> = {
+  'national-skill-development-mission': {
     name: 'National Skill Development Mission',
     shortName: 'National Skill Development Mission',
     icon: GraduationCap,
-    projects: [
-      {
-        id: 'pmkvy-2-0-2016-17',
-        name: 'PMKVY 2.0',
-        session: '2016–17 & 2017–18',
-        traineesTrained: '5990',
-        traineesPlaced: '2930',
-      },
-      {
-        id: 'pmkvy-rpl-2018-19',
-        name: 'PMKVY – RPL',
-        session: '2018–19',
-        traineesTrained: '1080',
-        traineesPlaced: '720',
-      },
-    ],
   },
 
-  /* 02. ASSAM STATE RURAL LIVELIHOOD MISSION */
-  {
-    id: 'assam-state-rural-livelihood-mission',
+  'assam-state-rural-livelihood-mission': {
     name: 'Assam State Rural Livelihood Mission',
     shortName: 'ASRLM',
     icon: TreePine,
-    projects: [
-      {
-        id: 'ddu-gky-assam-2017-18',
-        name: 'DDU-GKY (Assam)',
-        session: '2017–18',
-        traineesTrained: '—',
-        traineesPlaced: '—',
-      },
-    ],
   },
 
-  /* 03. UTTAR PRADESH SKILL DEVELOPMENT MISSION */
-  {
-    id: 'uttar-pradesh-skill-development-mission',
+  'uttar-pradesh-skill-development-mission': {
     name: 'Uttar Pradesh Skill Development Mission',
     shortName: 'UPSDM',
     icon: Landmark,
-    projects: [
-      {
-        id: 'ddu-gky-up-2017-18',
-        name: 'DDU-GKY (Uttar Pradesh)',
-        session: '2017–18',
-        traineesTrained: '—',
-        traineesPlaced: '—',
-      },
-    ],
   },
 
-  /* 04. HIMAYAT MISSION MANAGEMENT UNIT */
-  {
-    id: 'himayat-mission-management-unit',
+  'himayat-mission-management-unit': {
     name: 'Himayat Mission Management Unit',
     shortName: 'Himayat',
     icon: Target,
-    projects: [
-      {
-        id: 'ddu-gky-himayat-2018-19',
-        name: 'DDU-GKY (Himayat)',
-        session: '2018–19',
-        traineesTrained: '—',
-        traineesPlaced: '—',
-      },
-    ],
   },
 
-  /* 05. MINISTRY OF MINORITY AFFAIRS */
-  {
-    id: 'ministry-of-minority-affairs',
+  'ministry-of-minority-affairs': {
     name: 'Ministry of Minority Affairs',
     shortName: 'Ministry of Minority Affairs',
     icon: HeartHandshake,
-    projects: [
-      {
-        id: 'seekho-aur-kamao-2018-19',
-        name: 'Seekho Aur Kamao',
-        session: '2018–19',
-        traineesTrained: '1000',
-        traineesPlaced: '758',
-      },
-      {
-        id: 'nai-manzil-2018-19',
-        name: 'Nai Manzil',
-        session: '2018–19',
-        traineesTrained: '413',
-        traineesPlaced: '310',
-      },
-      {
-        id: 'gharib-nawaz-2018-19',
-        name: 'Gharib Nawaz Skill Development Training for Minorities',
-        session: '2018–19',
-        traineesTrained: '850',
-        traineesPlaced: '638',
-      },
-      {
-        id: 'seekho-aur-kamao-2-0-2019-20',
-        name: 'Seekho Aur Kamao 2.0',
-        session: '2019–20',
-        traineesTrained: '650',
-        traineesPlaced: '497',
-      },
-      {
-        id: 'seekho-aur-kamao-3-0-2020-21',
-        name: 'Seekho Aur Kamao 3.0',
-        session: '2020–21',
-        traineesTrained: '950',
-        traineesPlaced: '723',
-      },
-      {
-        id: 'maef-sak-2020-21',
-        name: 'MAEF (SAK)',
-        session: '2020–21',
-        traineesTrained: '407',
-        traineesPlaced: 'Assessment Pending',
-      },
-    ],
   },
 
-  /* 06. PUNJAB SKILL DEVELOPMENT MISSION */
-  {
-    id: 'punjab-skill-development-mission',
+  'punjab-skill-development-mission': {
     name: 'Punjab Skill Development Mission',
     shortName: 'Punjab Skill Development Mission',
     icon: Award,
-    projects: [
-      {
-        id: 'pmkvy-2-0-punjab-2018-19',
-        name: 'PMKVY 2.0',
-        session: '2018–19',
-        traineesTrained: '547',
-        traineesPlaced: '212',
-      },
-      {
-        id: 'day-nulm-punjab-2018-19',
-        name: 'DAY-NULM',
-        session: '2018–19',
-        traineesTrained: '420',
-        traineesPlaced: '207',
-      },
-      {
-        id: 'pmkvy-2-0-punjab-2019-20',
-        name: 'PMKVY 2.0',
-        session: '2019–20',
-        traineesTrained: '400',
-        traineesPlaced: '260',
-      },
-      {
-        id: 'day-nulm-punjab-2020-21',
-        name: 'DAY-NULM',
-        session: '2020–21',
-        traineesTrained: '720',
-        traineesPlaced: '390',
-      },
-      {
-        id: 'rpl-3-0-punjab-2020-21',
-        name: 'RPL 3.0',
-        session: '2020–21',
-        traineesTrained: '600',
-        traineesPlaced: '499',
-      },
-      {
-        id: 'day-nulm-punjab-2021-22',
-        name: 'DAY-NULM',
-        session: '2021–22',
-        traineesTrained: '600',
-        traineesPlaced: '415',
-      },
-      {
-        id: 'rpl-3-0-punjab-2022-23',
-        name: 'RPL 3.0',
-        session: '2022–23',
-        traineesTrained: '100',
-        traineesPlaced: 'NA',
-      },
-    ],
   },
 
-  /* 07. BEAUTY AND WELLNESS SSC */
-  {
-    id: 'beauty-and-wellness',
+  'beauty-and-wellness-sector-skill-council': {
     name: 'Beauty and Wellness Sector Skill Council',
-    shortName: 'Beauty & Wellness SSC',
+    shortName: 'Beauty & Wellness',
     icon: Sparkles,
-    projects: [
-      {
-        id: 'nsfdc-2018-19',
-        name: 'NSFDC',
-        session: '2018–19',
-        traineesTrained: '80',
-        traineesPlaced: '55',
-      },
-    ],
   },
 
-  /* 08. MEDIA AND ENTERTAINMENT SSC */
-  {
-    id: 'media-and-entertainment-ssc',
+  'media-and-entertainment-sector-skill-council': {
     name: 'Media and Entertainment Sector Skill Council',
-    shortName: 'Media & Entertainment SSC',
+    shortName: 'Media & Entertainment',
     icon: Clapperboard,
-    projects: [
-      {
-        id: 'nbcfdc-media-2018-19',
-        name: 'NBCFDC',
-        session: '2018–19',
-        traineesTrained: '50',
-        traineesPlaced: '36',
-      },
-      {
-        id: 'nskfdc-media-2019-20',
-        name: 'NSKFDC',
-        session: '2019–20',
-        traineesTrained: '160',
-        traineesPlaced: '110',
-      },
-    ],
   },
 
-  /* 09. INDIAN PLUMBING SSC */
-  {
-    id: 'indian-plumbing-sector-skill-council',
-    name: 'Indian Plumbing Sector Skill Council',
-    shortName: 'Indian Plumbing SSC',
+  'indian-plumbing-sector-skill-council': {
+    name: 'Indian Plumbing Sector Skill Council (PSDM)',
+    shortName: 'Indian Plumbing',
     icon: Wrench,
-    projects: [
-      {
-        id: 'nbcfdc-ipsc-2018-19',
-        name: 'NBCFDC',
-        session: '2018–19',
-        traineesTrained: '80',
-        traineesPlaced: '57',
-      },
-      {
-        id: 'day-nulm-ipsc-2019-20',
-        name: 'DAY-NULM',
-        session: '2019–20',
-        traineesTrained: '360',
-        traineesPlaced: '272',
-      },
-    ],
   },
 
-  /* 10. PMAY CHHATTISGARH */
-  {
-    id: 'pmay-chhattisgarh',
-    name: 'PMAY Chhattisgarh',
-    shortName: 'PMAY – Chhattisgarh',
-    icon: Home,
-    projects: [
-      {
-        id: 'chhattisgarh-rpl-2018-19',
-        name: 'Chhattisgarh RPL / PMAY Project',
-        session: '2018–19',
-        traineesTrained: '1550',
-        traineesPlaced: '1121',
-      },
-    ],
+  'pmay-chhattisgarh': {
+    name: 'Pradhan Mantri Awas Yojna-Chhattisgarh',
+    shortName: 'PMAY Chhattisgarh',
+    icon: Building2,
   },
 
-  /* 11. NIESBUD */
-  {
-    id: 'niesbud',
-    name: 'NIESBUD',
+  niesbud: {
+    name: 'National Institute for Entrepreneurship and Small Business Development',
     shortName: 'NIESBUD',
     icon: Lightbulb,
-    projects: [
-      {
-        id: 'niesbud-edp',
-        name: 'Entrepreneurship Development Programme',
-        session: 'Ongoing',
-        traineesTrained: '—',
-        traineesPlaced: '—',
-      },
-    ],
   },
 
-  /* 12. HARYANA SKILL DEVELOPMENT MISSION */
-  {
-    id: 'haryana-skill-development-mission',
+  'haryana-skill-development-mission': {
     name: 'Haryana Skill Development Mission',
-    shortName: 'Haryana Skill Development Mission',
-    icon: Award,
-    projects: [
-      {
-        id: 'hsdm-2022-23',
-        name: 'HSDM',
-        session: '2022–23',
-        traineesTrained: '120',
-        traineesPlaced: '84',
-      },
-    ],
+    shortName: 'HSDM',
+    icon: GraduationCap,
   },
 
-  /* 13. MINISTRY OF SOCIAL JUSTICE & EMPOWERMENT */
-  {
-    id: 'ministry-of-social-justice-and-empowerment',
-    name: 'Ministry of Social Justice & Empowerment',
+  'ministry-of-social-justice-empowerment': {
+    name: 'Ministry of Social Justice and Empowerment',
     shortName: 'Social Justice & Empowerment',
     icon: Scale,
-    projects: [
-      {
-        id: 'pm-ajay-2022-23',
-        name: 'PM-AJAY',
-        session: '2022–23',
-        traineesTrained: '600',
-        traineesPlaced: '435',
-      },
-    ],
   },
 
-  /* 14. PMKVY 4.0 */
-  {
-    id: 'pmkvy-4-0',
+  'pmkvy-4-0': {
     name: 'PMKVY 4.0',
     shortName: 'PMKVY 4.0',
     icon: GraduationCap,
-    projects: [
-      {
-        id: 'pmkvy-4-0-2023-24',
-        name: 'PMKVY 4.0 (STT & RPL)',
-        session: '2023–24',
-        traineesTrained: '2576',
-        traineesPlaced: 'NA',
-      },
-    ],
   },
 
-  /* 15. PUNJAB HUNAR VIKAS YOJNA */
-  {
-    id: 'punjab-hunar-vikas-yojna',
+  'punjab-hunar-vikas-yojna': {
     name: 'Punjab Hunar Vikas Yojna',
-    shortName: 'Punjab Hunar Vikas Yojna',
+    shortName: 'PHVY',
     icon: Handshake,
-    projects: [
-      {
-        id: 'phvy-2024-25',
-        name: 'PHVY (Punjab Hunar Vikas Yojna)',
-        session: '2024–25',
-        traineesTrained: '60',
-        traineesPlaced: '42',
-      },
-    ],
   },
 
-  /* 16. DISTRICT INDUSTRIES CENTRE */
-  {
-    id: 'district-industries-centre',
+  'district-industries-centre': {
     name: 'District Industries Centre',
-    shortName: 'District Industries Centre',
+    shortName: 'DIC',
     icon: Factory,
-    projects: [
-      {
-        id: 'edp-2025-26',
-        name: 'Entrepreneurship Development Programme (EDP)',
-        session: '2025–26',
-        traineesTrained: '150',
-        traineesPlaced: 'NA',
-      },
-    ],
   },
-];
+};
+
+const projectDepartments: ProjectDepartment[] = Object.values(
+  projectsData.reduce<Record<string, ProjectDepartment>>((acc, project) => {
+    const meta = departmentMeta[project.departmentId];
+
+    if (!meta) return acc;
+
+    if (!acc[project.departmentId]) {
+      acc[project.departmentId] = {
+        id: project.departmentId,
+        name: meta.name,
+        shortName: meta.shortName,
+        icon: meta.icon,
+        projects: [],
+      };
+    }
+
+    acc[project.departmentId].projects.push({
+      id: project.id,
+      name: project.name,
+      session: project.year,
+      traineesTrained:
+        project.traineesTrained !== undefined
+          ? project.traineesTrained.toLocaleString()
+          : '—',
+      traineesPlaced:
+        project.traineesPlaced !== undefined && project.traineesPlaced !== null
+          ? project.traineesPlaced.toLocaleString()
+          : project.placementStatus ?? '—',
+    });
+
+    return acc;
+  }, {})
+);
 
 /* =========================================================
    MAIN NAVIGATION
@@ -573,22 +341,22 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
             <Link
               to="/"
               className="flex items-center shrink-0 group"
-              aria-label="Doric Skills Home"
+              aria-label="DMPL Skills Home"
             >
-              <img
-                src="public/images/dmpl skills logo.png"
-                alt="DORIC SKILLS"
-                className="
-                  block
-                  w-[220px]
-                  sm:w-[260px]
-                  lg:w-[220px]
-                  h-auto
-                  object-contain
-                  transition-all duration-300
-                  group-hover:opacity-90
-                "
-              />
+            <img
+  src="/Images/dmpl-skills-logo.png"
+  alt="DMPL SKILLS"
+  className="
+    block
+    w-[220px]
+    sm:w-[260px]
+    lg:w-[220px]
+    h-auto
+    object-contain
+    transition-all duration-300
+    group-hover:opacity-90
+  "
+/>
             </Link>
 
             {/* ========== DESKTOP NAV ========== */}
@@ -969,7 +737,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
                   <span className="w-1.5 h-7 bg-[#138808] rounded-full" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-slate-900">Doric Skills</p>
+                  <p className="text-xs font-bold text-slate-900">DMPL Skills</p>
                   <p className="text-[10px] text-slate-500">Skill Development & Training</p>
                 </div>
               </div>

@@ -163,7 +163,7 @@ export const TeamPage: React.FC = () => {
                 "
               >
                 <Users className="w-3.5 h-3.5" />
-                The People Behind Doric Skills
+                The People Behind DMPL Skills
               </div>
 
               <h1
@@ -206,7 +206,7 @@ export const TeamPage: React.FC = () => {
                     transition-all duration-300
                   "
                 >
-                  About Doric Skills
+                  About DMPL Skills
                   <ArrowRight className="w-4 h-4" />
                 </Link>
 
@@ -307,7 +307,7 @@ export const TeamPage: React.FC = () => {
               Our Departments
             </h2>
             <p className="mt-4 text-sm sm:text-base text-slate-600 leading-relaxed">
-              Doric Skills operates across specialized functional units, each
+              DMPL Skills operates across specialized functional units, each
               focused on a core pillar of successful skill development project
               delivery.
             </p>
@@ -464,7 +464,7 @@ export const TeamPage: React.FC = () => {
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-white">
-            Partner with Doric Skills
+            Partner with DMPL Skills
           </h2>
 
           <p className="mt-5 text-base text-blue-100/75 max-w-2xl mx-auto leading-relaxed">

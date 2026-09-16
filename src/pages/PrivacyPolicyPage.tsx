@@ -58,7 +58,7 @@ export const PrivacyPolicyPage: React.FC = () => {
             </h1>
 
             <p className="mt-5 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
-              Information about how Doric Skills handles candidate,
+              Information about how DMPL Skills handles candidate,
               applicant, and stakeholder information submitted through its
               training and enquiry channels.
             </p>
@@ -96,7 +96,7 @@ export const PrivacyPolicyPage: React.FC = () => {
                   </h2>
 
                   <p className="mt-2 text-sm sm:text-[15px] text-slate-600 leading-7">
-                    Doric Skills respects candidate and stakeholder
+                    DMPL Skills respects candidate and stakeholder
                     confidentiality. This privacy notice outlines how
                     candidate records, admission applications, and
                     communication enquiries are gathered, processed, and
@@ -197,7 +197,7 @@ export const PrivacyPolicyPage: React.FC = () => {
                   </div>
 
                   <p>
-                    Doric Skills does not sell, lease, or monetize candidate
+                    DMPL Skills does not sell, lease, or monetize candidate
                     data to commercial third parties. Data is only disclosed
                     when necessary to comply with legal processes or
                     authorized government skilling assessment bodies for
@@ -266,7 +266,7 @@ export const PrivacyPolicyPage: React.FC = () => {
           <div className="mt-8 text-center">
             <p className="text-xs sm:text-sm text-slate-500">
               Please review this notice alongside the Terms & Conditions
-              applicable to your use of the Doric Skills website and services.
+              applicable to your use of the DMPL Skills website and services.
             </p>
           </div>
         </div>

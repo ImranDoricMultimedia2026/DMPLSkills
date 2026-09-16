@@ -48,7 +48,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onSelectProje
           <div className="flex items-start gap-2">
             <ShieldCheck className="w-3.5 h-3.5 text-[#9d3626] shrink-0 mt-0.5" />
             <div>
-              <span className="font-medium text-slate-700">Doric Skills' Role:</span> {project.role}
+              <span className="font-medium text-slate-700">DMPL Skills' Role:</span> {project.role}
             </div>
           </div>
         </div>

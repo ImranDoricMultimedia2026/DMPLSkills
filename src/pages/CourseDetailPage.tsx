@@ -125,7 +125,7 @@ export const CourseDetailPage: React.FC<CourseDetailPageProps> = ({ onOpenEnquir
                 </button>
 
                 <div className="mt-4 pt-3 border-t border-slate-100 text-[11px] text-slate-500 text-center">
-                  Structured Vocational Curriculum by Doric Skills
+                  Structured Vocational Curriculum by DMPL Skills
                 </div>
               </div>
             </div>
@@ -281,7 +281,7 @@ export const CourseDetailPage: React.FC<CourseDetailPageProps> = ({ onOpenEnquir
                 </div>
 
                 <p className="text-[11px] text-slate-500 mt-4 italic">
-                  * Note: Doric Skills provides practical competency training, mock interviews, and career counseling. In compliance with fair practices, guaranteed employment is not promised.
+                  * Note: DMPL Skills provides practical competency training, mock interviews, and career counseling. In compliance with fair practices, guaranteed employment is not promised.
                 </p>
               </div>
 

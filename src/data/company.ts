@@ -1,20 +1,20 @@
 import { CompanyInfo } from '../types';
 
 /**
- * DORIC SKILLS COMPANY INFORMATION
+ * DMPL SKILLS COMPANY INFORMATION
  * Edit this file to update official organizational credentials, contact information,
  * addresses, and institutional profile text.
  */
 export const companyData: CompanyInfo = {
-  name: 'Doric Skills',
+  name: 'DMPL Skills',
   tagline: 'Building Skills. Creating Opportunities.',
-  registeredName: 'Doric Skills Training & Development Pvt. Ltd. (Placeholder)',
+  registeredName: 'DMPL Skills Training & Development Pvt. Ltd. (Placeholder)',
   headquarters: 'India',
   addressPlaceholder: 'Plot / Tower No. [XX], Institutional Area, Skill Development Corridor, New Delhi / State Regional Office, India (Official Address To Be Provided)',
-  emailPlaceholder: 'contact@doricskills.com (Placeholder)',
+  emailPlaceholder: 'contact@DMPLskills.com (Placeholder)',
   phonePlaceholder: '+91 [XX] [XXXX] [XXXX] (Official Contact To Be Updated)',
   workingHours: 'Monday – Saturday: 9:00 AM – 6:00 PM IST',
-  aboutSnippet: 'Doric Skills is an Indian skill development and vocational training organization committed to bridging employment and capacity gaps. We specialize in designing and delivering outcome-oriented training programs, vocational coursework, and government-aligned institutional capacity projects.',
+  aboutSnippet: 'DMPL Skills is an Indian skill development and vocational training organization committed to bridging employment and capacity gaps. We specialize in designing and delivering outcome-oriented training programs, vocational coursework, and government-aligned institutional capacity projects.',
   mission: 'To democratize access to industry-aligned vocational skills, modern technological literacies, and practical livelihoods for youth and workforce participants across India through transparent, structured training frameworks.',
   vision: 'To emerge as a premier, high-integrity institutional training partner driving national human capital development in harmony with India’s national skill qualification standards and industry needs.',
   approach: [
@@ -54,5 +54,5 @@ export const companyData: CompanyInfo = {
       detail: 'Expanding capacity to deploy blended training hubs, state-level institutional programs, and student empowerment initiatives.'
     }
   ],
-  leadershipNote: 'Doric Skills is guided by a panel of seasoned vocational educators, industry training practitioners, and institutional project managers. Individual executive profiles, board composition, and governance credentials will be officially populated upon formal organizational publication.'
+  leadershipNote: 'DMPL Skills is guided by a panel of seasoned vocational educators, industry training practitioners, and institutional project managers. Individual executive profiles, board composition, and governance credentials will be officially populated upon formal organizational publication.'
 };

@@ -1,10 +1,10 @@
 import { Course } from '../types';
 
 /**
- * DORIC SKILLS COURSE REPOSITORY
+ * DMPL SKILLS COURSE REPOSITORY
  * All courses are stored in this centralized data file.
  * To add, modify, or remove courses, edit the array below.
- * Notice: All entries are marked as sample/curriculum templates until verified by Doric Skills.
+ * Notice: All entries are marked as sample/curriculum templates until verified by DMPL Skills.
  */
 export const coursesData: Course[] = [
   {
@@ -19,8 +19,8 @@ export const coursesData: Course[] = [
     eligibility: '10th / 12th Pass or Equivalent (Basic Computer Literacy Recommended)',
     mode: 'Classroom / In-Person',
     level: 'Foundational',
-    location: 'Designated Doric Skills Training Labs / Partner Centres',
-    certification: 'Doric Skills Certificate of Vocational Competency in Graphic Design',
+    location: 'Designated DMPL Skills Training Labs / Partner Centres',
+    certification: 'DMPL Skills Certificate of Vocational Competency in Graphic Design',
     whoShouldApply: [
       'Creative individuals seeking employment in advertising, publishing, or social media design',
       'Fresh high school or college graduates looking to build high-demand visual design skills',
@@ -98,7 +98,7 @@ export const coursesData: Course[] = [
       },
       {
         question: 'Are computers and software provided at the training center?',
-        answer: 'Yes, all Doric Skills training classrooms are equipped with dedicated workstation computers and necessary design tools for hands-on classroom lab sessions.'
+        answer: 'Yes, all DMPL Skills training classrooms are equipped with dedicated workstation computers and necessary design tools for hands-on classroom lab sessions.'
       },
       {
         question: 'Will I receive a certificate upon course completion?',
@@ -119,8 +119,8 @@ export const coursesData: Course[] = [
     eligibility: '12th Pass or Equivalent with Basic English & Computer Familiarity',
     mode: 'Classroom / In-Person',
     level: 'Foundational',
-    location: 'Designated Doric Skills Computer Lab Facilities',
-    certification: 'Doric Skills Certificate in Web Design & UI Implementation',
+    location: 'Designated DMPL Skills Computer Lab Facilities',
+    certification: 'DMPL Skills Certificate in Web Design & UI Implementation',
     whoShouldApply: [
       'Aspirants wanting to build an entry-level career in web development and design',
       'Graphic designers seeking to expand their technical capabilities into web interfaces',
@@ -215,8 +215,8 @@ export const coursesData: Course[] = [
     eligibility: '12th Pass or Any Degree in Arts/Commerce/Science',
     mode: 'Classroom / In-Person',
     level: 'Foundational',
-    location: 'Designated Doric Skills Training Labs',
-    certification: 'Doric Skills Certificate in Digital Marketing Fundamentals',
+    location: 'Designated DMPL Skills Training Labs',
+    certification: 'DMPL Skills Certificate in Digital Marketing Fundamentals',
     whoShouldApply: [
       'Graduates wanting to start careers in digital agency or in-house marketing teams',
       'Entrepreneurs wanting to generate organic and paid leads for local businesses',
@@ -307,8 +307,8 @@ export const coursesData: Course[] = [
     eligibility: '10th Pass or Equivalent',
     mode: 'Classroom / In-Person',
     level: 'Foundational',
-    location: 'Designated Doric Skills Center Computer Centers',
-    certification: 'Doric Skills Certificate of Proficiency in Data Entry & Office Tools',
+    location: 'Designated DMPL Skills Center Computer Centers',
+    certification: 'DMPL Skills Certificate of Proficiency in Data Entry & Office Tools',
     whoShouldApply: [
       'Matriculation and higher secondary certificate holders seeking formal employment',
       'Candidates preparing for clerical or computer operator examinations',
@@ -395,8 +395,8 @@ export const coursesData: Course[] = [
     eligibility: '10th / 12th Pass or Equivalent',
     mode: 'Classroom / In-Person',
     level: 'Foundational',
-    location: 'Designated Doric Skills Practical Labs',
-    certification: 'Doric Skills Certificate in Retail Operations & Customer Relations',
+    location: 'Designated DMPL Skills Practical Labs',
+    certification: 'DMPL Skills Certificate in Retail Operations & Customer Relations',
     whoShouldApply: [
       'Young job aspirants seeking customer-facing careers in retail stores and malls',
       'Individuals aiming for frontline sales and store inventory positions',
@@ -483,8 +483,8 @@ export const coursesData: Course[] = [
     eligibility: '8th / 10th Pass or Equivalent',
     mode: 'Classroom / In-Person',
     level: 'Foundational',
-    location: 'Designated Doric Skills Practical Salon Training Labs',
-    certification: 'Doric Skills Certificate of Vocational Competency in Beauty & Wellness',
+    location: 'Designated DMPL Skills Practical Salon Training Labs',
+    certification: 'DMPL Skills Certificate of Vocational Competency in Beauty & Wellness',
     whoShouldApply: [
       'Aspirants desiring to launch a career in professional salons, spas, or wellness clinics',
       'Women seeking self-employment and home salon entrepreneurship opportunities',

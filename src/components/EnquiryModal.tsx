@@ -176,7 +176,7 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
                   <GraduationCap className="w-3.5 h-3.5 text-[#ff9933]" />
 
                   <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.14em] text-white/85">
-                    Doric Skills Admissions
+                    DMPL Skills Admissions
                   </span>
                 </div>
 
@@ -189,7 +189,7 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
                 </h3>
 
                 <p className="mt-1.5 text-xs sm:text-sm text-slate-300 leading-5">
-                  Submit your details to connect with a Doric Skills
+                  Submit your details to connect with a DMPL Skills
                   vocational advisor.
                 </p>
               </div>
@@ -484,7 +484,7 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({
                   </div>
 
                   <p className="text-[11px] sm:text-xs text-slate-500 leading-5">
-                    By submitting this form, you authorize Doric Skills
+                    By submitting this form, you authorize DMPL Skills
                     advisors to contact you regarding course admission
                     guidelines and training schedules.
                   </p>

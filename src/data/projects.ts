@@ -1,7 +1,7 @@
 import { Project } from '../types';
 
 /**
- * DORIC SKILLS
+ * DMPL SKILLS
  * VERIFIED PROJECT PORTFOLIO DATA
  *
  * Source:
@@ -18,6 +18,9 @@ import { Project } from '../types';
  * Information not available in the source is intentionally
  * not fabricated.
  */
+
+
+
 
 export const projectsData: Project[] = [
   /* =========================================================

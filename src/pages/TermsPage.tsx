@@ -62,7 +62,7 @@ export const TermsPage: React.FC = () => {
 
             <p className="mt-5 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
               Please review the terms and conditions governing access to the
-              Doric Skills website and participation in its vocational
+              DMPL Skills website and participation in its vocational
               training programmes.
             </p>
 
@@ -101,7 +101,7 @@ export const TermsPage: React.FC = () => {
                   </h2>
 
                   <p className="mt-2 text-sm sm:text-[15px] text-slate-600 leading-7">
-                    By accessing the Doric Skills web portal or enrolling in
+                    By accessing the DMPL Skills web portal or enrolling in
                     our vocational training courses, you acknowledge and
                     agree to comply with the institutional rules and terms
                     stated below.
@@ -166,7 +166,7 @@ export const TermsPage: React.FC = () => {
                     Course completion certificates are awarded strictly based
                     on demonstrated competence, submission of required
                     practical capstone portfolios, and passing objective
-                    assessments. Doric Skills does not issue unearned
+                    assessments. DMPL Skills does not issue unearned
                     honorary credentials.
                   </p>
                 </div>
@@ -187,7 +187,7 @@ export const TermsPage: React.FC = () => {
 
               <div className="px-6 sm:px-8 py-6">
                 <p className="text-sm sm:text-[15px] text-slate-600 leading-7">
-                  Doric Skills provides market-aligned vocational
+                  DMPL Skills provides market-aligned vocational
                   instruction, CV preparation, and employer linkage
                   opportunities. We do not guarantee unconditional job
                   placement, government employment, or specific salary
@@ -217,7 +217,7 @@ export const TermsPage: React.FC = () => {
 
                   <p className="text-sm sm:text-[15px] text-slate-600 leading-7">
                     All syllabi, training guides, presentations, and software
-                    tutorials authored by Doric Skills remain proprietary
+                    tutorials authored by DMPL Skills remain proprietary
                     intellectual property. Trainees may not reproduce,
                     distribute, or commercially exploit curriculum assets
                     without written authorization.
@@ -245,7 +245,7 @@ export const TermsPage: React.FC = () => {
                   <p className="mt-2 text-sm text-slate-300 leading-6 max-w-3xl">
                     These terms should be read together with the Privacy
                     Policy and other applicable institutional policies
-                    published on the Doric Skills website.
+                    published on the DMPL Skills website.
                   </p>
                 </div>
               </div>
@@ -260,7 +260,7 @@ export const TermsPage: React.FC = () => {
               </h3>
 
               <p className="mt-1 text-sm text-slate-500">
-                Contact Doric Skills for further clarification.
+                Contact DMPL Skills for further clarification.
               </p>
             </div>
 

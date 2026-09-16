@@ -133,7 +133,7 @@ export const GalleryPage: React.FC = () => {
             </h1>
 
             <p className="mt-6 max-w-3xl text-base leading-8 text-slate-300 sm:text-lg">
-              Explore project-wise photographs from Doric Skills
+              Explore project-wise photographs from DMPL Skills
               training programmes and skill development initiatives.
             </p>
 

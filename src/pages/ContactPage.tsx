@@ -79,7 +79,7 @@ export const ContactPage: React.FC = () => {
       setIsSuccess(true);
 
       const randomRef =
-        'DORIC-' +
+        'DMPL-' +
         Math.floor(100000 + Math.random() * 900000);
 
       setRefId(randomRef);
@@ -149,7 +149,7 @@ export const ContactPage: React.FC = () => {
             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
               Connect with{' '}
               <span className="text-[#ff9933]">
-                Doric Skills
+                DMPL Skills
               </span>
             </h1>
 
@@ -362,7 +362,7 @@ export const ContactPage: React.FC = () => {
                     </a>
 
                     <a
-                      href="https://wa.me/?text=Hello%20Doric%20Skills%2C%20I%20am%20interested%20in%20your%20vocational%20training%20programs."
+                      href="https://wa.me/?text=Hello%20DMPL%20Skills%2C%20I%20am%20interested%20in%20your%20vocational%20training%20programs."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/10 px-4 py-2.5 text-xs font-bold text-white transition-all hover:bg-white/15"
@@ -797,7 +797,7 @@ export const ContactPage: React.FC = () => {
             </h3>
 
             <p className="mt-2 max-w-2xl text-sm leading-7 text-slate-500">
-              Location information for available Doric Skills
+              Location information for available DMPL Skills
               training and administrative centres can be added here
               once verified details are available.
             </p>
@@ -834,7 +834,7 @@ export const ContactPage: React.FC = () => {
               </div>
 
               <h4 className="mt-4 text-sm font-extrabold text-[#12335f]">
-                Doric Skills Training Network
+                DMPL Skills Training Network
               </h4>
 
               <p className="mt-2 text-xs leading-6 text-slate-500">

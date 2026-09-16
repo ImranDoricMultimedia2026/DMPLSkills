@@ -70,7 +70,7 @@ const StatsSection: React.FC = () => {
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
-            A snapshot of Doric Skills' recorded project portfolio,
+            A snapshot of DMPL Skills' recorded project portfolio,
             training outreach and reported placement outcomes across
             skill development programmes.
           </p>

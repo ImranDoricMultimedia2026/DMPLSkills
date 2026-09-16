@@ -71,19 +71,20 @@ export const Footer: React.FC = () => {
 {/* Logo */}
 <div className="flex flex-col items-start">
 
-  {/* Doric Skills Logo */}
-  <img
-    src="public/images/dmpl skills logo 02.png"
-    alt="DORIC SKILLS"
-    className="
-      w-[220px] h-auto
-      sm:w-[260px]
-      lg:w-[220px]
-      object-contain
-      object-left
-      transition-all duration-300
-    "
-  />
+  {/* DMPL Skills Logo */}
+<img
+  src="/Images/dmpl-skills-logo-02.png"
+  alt="DMPL SKILLS"
+  className="
+    w-[220px]
+    h-auto
+    sm:w-[260px]
+    lg:w-[220px]
+    object-contain
+    object-left
+    transition-all duration-300
+  "
+/>
 
   {/* Logo Text */}
   <p className="text-[10px] text-white/45 uppercase tracking-[0.18em] mt-1 ml-1">
@@ -295,7 +296,7 @@ export const Footer: React.FC = () => {
                   href={`mailto:${companyData.emailPlaceholder}`}
                   className="pt-1 hover:text-[#ff9933] transition-colors break-all"
                 >
-                  {companyData.emailPlaceholder || 'info@doricskills.com'}
+                  {companyData.emailPlaceholder || 'info@DMPLskills.com'}
                 </a>
               </li>
 
@@ -357,7 +358,7 @@ export const Footer: React.FC = () => {
 
             {/* Copyright */}
             <div className="flex items-center gap-3 text-white/40">
-              <span>© {currentYear} Doric Skills</span>
+              <span>© {currentYear} DMPL Skills</span>
 
               <span className="hidden sm:inline text-white/15">
                 |
