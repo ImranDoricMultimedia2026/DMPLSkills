@@ -9,6 +9,7 @@ import {
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { EnquiryModal } from './components/EnquiryModal';
+import { FloatingActions } from './components/FloatingActions';
 
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
@@ -262,6 +263,13 @@ export default function App() {
           onClose={handleCloseEnquiry}
           preselectedCourse={preselectedCourse}
         />
+
+
+        {/* =========================
+            GLOBAL FLOATING ACTIONS
+            (WhatsApp / SMS / Back to Top)
+        ========================== */}
+        <FloatingActions />
 
       </div>
 

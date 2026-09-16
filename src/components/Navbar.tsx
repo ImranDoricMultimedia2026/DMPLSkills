@@ -29,6 +29,8 @@ import {
   Scale,
   Handshake,
   Factory,
+  AtSign
+  
 } from 'lucide-react';
 import { projectsData } from '../data/projects';
 
@@ -207,7 +209,7 @@ const projectDepartments: ProjectDepartment[] = Object.values(
 
 const navigationItems = [
   { label: 'Home', href: '/', icon: Home },
-  { label: 'About', href: '/about', icon: Info },
+  { label: 'About', href: '/about', icon: AtSign },
   { label: 'Projects', href: '/projects', icon: FolderKanban, isDropdown: true },
   { label: 'Our Team', href: '/team', icon: Users },
   { label: 'Gallery', href: '/gallery', icon: Images },

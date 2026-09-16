@@ -11,7 +11,6 @@ import {
   ShieldCheck,
   Users,
   CheckCircle2,
-  Sparkles,
   Award,
   TrendingUp,
 } from 'lucide-react';
@@ -159,7 +158,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#ff9933] opacity-60" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-[#ff9933]" />
               </span>
-              <Sparkles size={13} className="text-[#ff9933]" />
+            
               <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-white/85">
                 Project Record
               </span>
