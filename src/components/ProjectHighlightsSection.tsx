@@ -5,8 +5,7 @@ import { galleryData } from '../data/gallery';
 
 const featuredProjects = galleryData.map((project) => ({
   ...project,
-  // Home par har project ka sirf ek representative image.
-  // Actual paths gallery.ts mein add karne hain.
+
   featuredImage: project.images?.[0] || '',
 }));
 

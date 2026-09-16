@@ -206,12 +206,11 @@ const AboutPreviewSection: React.FC = () => {
 
               {/* Image */}
               <div className="relative aspect-[4/4.4] overflow-hidden sm:aspect-[4/3.7]">
-
-                <img
-                  src="/images/about-skills.jpg"
-                  alt="DMPL Skills skill development and training"
-                  className="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
-                />
+<img
+  src="/Images/About/dmpl-skills-training-programs-students.png"
+  alt="DMPL Skills skill development and training"
+  className="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
+/>
 
                 {/* Image overlays */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#07182d]/90 via-[#12335f]/10 to-transparent" />

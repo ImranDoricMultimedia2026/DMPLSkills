@@ -8,7 +8,6 @@ import {
   Target,
   HeartHandshake,
   Award,
-  Sparkles,
   Clapperboard,
   Wrench,
   Home,
@@ -21,162 +20,213 @@ import {
   BookOpen,
 } from 'lucide-react';
 
-interface EcosystemItem {
-  id: string;
+import { projectsData } from '../data/projects';
+
+interface DepartmentMeta {
   name: string;
   shortName: string;
   icon: React.ElementType;
   category: string;
-  projects: number;
-  firstProjectId: string;
 }
 
-const ecosystemItems: EcosystemItem[] = [
-  {
-    id: 'national-skill-development-mission',
+/*
+|--------------------------------------------------------------------------
+| Department display information
+|--------------------------------------------------------------------------
+| IMPORTANT:
+| departmentId is taken from projectsData.
+| Project IDs are NEVER hardcoded here.
+|--------------------------------------------------------------------------
+*/
+
+const departmentMeta: Record<string, DepartmentMeta> = {
+  'national-skill-development-mission': {
     name: 'National Skill Development Mission',
     shortName: 'NSDM',
     icon: GraduationCap,
     category: 'National Mission',
-    projects: 2,
-    firstProjectId: 'pmkvy-2-0-2016-17',
   },
-  {
-    id: 'ministry-of-minority-affairs',
+
+  'ministry-of-minority-affairs': {
     name: 'Ministry of Minority Affairs',
     shortName: 'Minority Affairs',
     icon: HeartHandshake,
     category: 'Central Ministry',
-    projects: 6,
-    firstProjectId: 'seekho-aur-kamao-2018-19',
   },
-  {
-    id: 'punjab-skill-development-mission',
+
+  'punjab-skill-development-mission': {
     name: 'Punjab Skill Development Mission',
     shortName: 'PSDM',
     icon: Award,
     category: 'State Mission',
-    projects: 7,
-    firstProjectId: 'pmkvy-2-0-punjab-2018-19',
   },
-  {
-    id: 'haryana-skill-development-mission',
+
+  'haryana-skill-development-mission': {
     name: 'Haryana Skill Development Mission',
     shortName: 'HSDM',
     icon: Award,
     category: 'State Mission',
-    projects: 1,
-    firstProjectId: 'hsdm-2022-23',
   },
-  {
-    id: 'assam-state-rural-livelihood-mission',
+
+  'assam-state-rural-livelihood-mission': {
     name: 'Assam State Rural Livelihood Mission',
     shortName: 'ASRLM',
     icon: TreePine,
     category: 'State Mission',
-    projects: 1,
-    firstProjectId: 'ddu-gky-assam-2017-18',
   },
-  {
-    id: 'uttar-pradesh-skill-development-mission',
+
+  'uttar-pradesh-skill-development-mission': {
     name: 'Uttar Pradesh Skill Development Mission',
     shortName: 'UPSDM',
     icon: Landmark,
     category: 'State Mission',
-    projects: 1,
-    firstProjectId: 'ddu-gky-up-2017-18',
   },
-  {
-    id: 'himayat-mission-management-unit',
+
+  'himayat-mission-management-unit': {
     name: 'Himayat Mission Management Unit',
     shortName: 'Himayat',
     icon: Target,
     category: 'State Mission',
-    projects: 1,
-    firstProjectId: 'ddu-gky-himayat-2018-19',
   },
-  {
-    id: 'ministry-of-social-justice-and-empowerment',
+
+  'ministry-of-social-justice-empowerment': {
     name: 'Ministry of Social Justice & Empowerment',
     shortName: 'MSJE',
     icon: Scale,
     category: 'Central Ministry',
-    projects: 1,
-    firstProjectId: 'pm-ajay-2022-23',
   },
-  {
-    id: 'pmkvy-4-0',
+
+  'pmkvy-4-0': {
     name: 'PMKVY 4.0',
     shortName: 'PMKVY 4.0',
     icon: GraduationCap,
     category: 'Flagship Scheme',
-    projects: 1,
-    firstProjectId: 'pmkvy-4-0-2023-24',
   },
-  {
-    id: 'beauty-and-wellness',
-    name: 'Beauty & Wellness SSC',
+
+  'beauty-and-wellness-sector-skill-council': {
+    name: 'Beauty & Wellness Sector Skill Council',
     shortName: 'Beauty & Wellness',
     icon: BookOpen,
     category: 'Sector Skill Council',
-    projects: 1,
-    firstProjectId: 'nsfdc-2018-19',
   },
-  {
-    id: 'media-and-entertainment-ssc',
-    name: 'Media & Entertainment SSC',
+
+  'media-and-entertainment-sector-skill-council': {
+    name: 'Media & Entertainment Sector Skill Council',
     shortName: 'Media & Entertainment',
     icon: Clapperboard,
     category: 'Sector Skill Council',
-    projects: 2,
-    firstProjectId: 'nbcfdc-media-2018-19',
   },
-  {
-    id: 'indian-plumbing-sector-skill-council',
-    name: 'Indian Plumbing SSC',
+
+  'indian-plumbing-sector-skill-council': {
+    name: 'Indian Plumbing Sector Skill Council',
     shortName: 'Plumbing SSC',
     icon: Wrench,
     category: 'Sector Skill Council',
-    projects: 2,
-    firstProjectId: 'nbcfdc-ipsc-2018-19',
   },
-  {
-    id: 'pmay-chhattisgarh',
-    name: 'PMAY Chhattisgarh',
+
+  'pmay-chhattisgarh': {
+    name: 'Pradhan Mantri Awas Yojna-Chhattisgarh',
     shortName: 'PMAY',
     icon: Home,
     category: 'Housing Mission',
-    projects: 1,
-    firstProjectId: 'chhattisgarh-rpl-2018-19',
   },
-  {
-    id: 'niesbud',
-    name: 'NIESBUD',
+
+  niesbud: {
+    name: 'National Institute for Entrepreneurship and Small Business Development',
     shortName: 'NIESBUD',
     icon: Lightbulb,
     category: 'Entrepreneurship',
-    projects: 1,
-    firstProjectId: 'niesbud-edp',
   },
-  {
-    id: 'punjab-hunar-vikas-yojna',
+
+  'haryana-skill-development-mission': {
+    name: 'Haryana Skill Development Mission',
+    shortName: 'HSDM',
+    icon: Award,
+    category: 'State Mission',
+  },
+
+  'punjab-hunar-vikas-yojna': {
     name: 'Punjab Hunar Vikas Yojna',
     shortName: 'PHVY',
     icon: Handshake,
     category: 'State Scheme',
-    projects: 1,
-    firstProjectId: 'phvy-2024-25',
   },
-  {
-    id: 'district-industries-centre',
+
+  'district-industries-centre': {
     name: 'District Industries Centre',
     shortName: 'DIC',
     icon: Factory,
     category: 'Entrepreneurship',
-    projects: 1,
-    firstProjectId: 'edp-2025-26',
   },
-];
+};
+
+/*
+|--------------------------------------------------------------------------
+| Build ecosystem directly from projectsData
+|--------------------------------------------------------------------------
+| This is the important part.
+|
+| We do NOT write:
+| firstProjectId: 'some-id'
+|
+| Instead, the first actual project belonging to each department
+| is automatically selected from projectsData.
+|--------------------------------------------------------------------------
+*/
+
+const ecosystemItems = Object.values(
+  projectsData.reduce<
+    Record<
+      string,
+      {
+        id: string;
+        name: string;
+        shortName: string;
+        icon: React.ElementType;
+        category: string;
+        projects: number;
+        firstProjectId: string;
+      }
+    >
+  >((acc, project) => {
+    const meta = departmentMeta[project.departmentId];
+
+    /*
+     * If a department is not added to departmentMeta,
+     * don't show a broken ecosystem card.
+     */
+    if (!meta) {
+      return acc;
+    }
+
+    /*
+     * Create department once.
+     */
+    if (!acc[project.departmentId]) {
+      acc[project.departmentId] = {
+        id: project.departmentId,
+        name: meta.name,
+        shortName: meta.shortName,
+        icon: meta.icon,
+        category: meta.category,
+        projects: 0,
+
+        /*
+         * IMPORTANT:
+         * Take the REAL project ID from projectsData.
+         */
+        firstProjectId: project.id,
+      };
+    }
+
+    /*
+     * Count real projects.
+     */
+    acc[project.departmentId].projects += 1;
+
+    return acc;
+  }, {})
+);
 
 const EcosystemSection: React.FC = () => {
   return (
@@ -200,6 +250,7 @@ const EcosystemSection: React.FC = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* ================= HEADER ================= */}
+
         <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
           <div className="inline-flex items-center gap-2.5 mb-5">
             <span className="w-8 h-[2px] bg-[#ff9933] rounded-full" />
@@ -226,6 +277,7 @@ const EcosystemSection: React.FC = () => {
         </div>
 
         {/* ================= TRUST STRIP ================= */}
+
         <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 mb-12 lg:mb-14">
 
           <div className="flex items-center gap-2 text-sm text-slate-600">
@@ -239,8 +291,9 @@ const EcosystemSection: React.FC = () => {
 
           <div className="flex items-center gap-2 text-sm text-slate-600">
             <Building2 className="w-[18px] h-[18px] text-[#ff9933]" />
+
             <span className="font-medium">
-              16 Departments
+              {ecosystemItems.length} Departments
             </span>
           </div>
 
@@ -248,6 +301,7 @@ const EcosystemSection: React.FC = () => {
 
           <div className="flex items-center gap-2 text-sm text-slate-600">
             <Award className="w-[18px] h-[18px] text-[#ff9933]" />
+
             <span className="font-medium">
               Skill Development Programs
             </span>
@@ -255,16 +309,20 @@ const EcosystemSection: React.FC = () => {
         </div>
 
         {/* ================= ECOSYSTEM GRID ================= */}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5">
 
           {ecosystemItems.map((item) => {
             const Icon = item.icon;
 
             /*
-             * Correct project detail route:
-             * /projects/:departmentId/:projectId
+             * EXACT route generated from REAL project data.
+             *
+             * Example:
+             * /projects/national-skill-development-mission/pmkvy-2-0-2017-18
              */
-            const projectPath = `/projects/${item.id}/${item.firstProjectId}`;
+            const projectPath =
+              `/projects/${item.id}/${item.firstProjectId}`;
 
             return (
               <Link
@@ -282,7 +340,6 @@ const EcosystemSection: React.FC = () => {
                   overflow-hidden
                 "
               >
-
                 {/* Hover gradient */}
                 <div
                   className="
@@ -299,6 +356,7 @@ const EcosystemSection: React.FC = () => {
                 <div className="relative">
 
                   {/* Icon + Category */}
+
                   <div className="flex items-start justify-between mb-4">
 
                     <div
@@ -337,6 +395,7 @@ const EcosystemSection: React.FC = () => {
                   </div>
 
                   {/* Name */}
+
                   <h3
                     className="
                       text-[13px] sm:text-sm
@@ -353,13 +412,20 @@ const EcosystemSection: React.FC = () => {
                   </h3>
 
                   {/* Short Name */}
+
                   <p className="mt-1 text-[11px] font-medium text-[#ff9933]">
                     {item.shortName}
                   </p>
 
                   {/* Footer */}
-                  <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between">
 
+                  <div
+                    className="
+                      mt-4 pt-4
+                      border-t border-slate-100
+                      flex items-center justify-between
+                    "
+                  >
                     <span className="text-[11px] font-medium text-slate-500">
                       {item.projects} Project
                       {item.projects > 1 ? 's' : ''}
@@ -383,8 +449,8 @@ const EcosystemSection: React.FC = () => {
                         "
                       />
                     </span>
-
                   </div>
+
                 </div>
               </Link>
             );
@@ -392,6 +458,7 @@ const EcosystemSection: React.FC = () => {
         </div>
 
         {/* ================= BOTTOM CTA ================= */}
+
         <div className="mt-14 lg:mt-16 text-center">
 
           <div
@@ -407,7 +474,6 @@ const EcosystemSection: React.FC = () => {
               shadow-[0_10px_40px_rgba(15,23,42,0.05)]
             "
           >
-
             <div className="text-center sm:text-left">
 
               <p className="text-sm font-bold text-slate-900">
@@ -415,7 +481,8 @@ const EcosystemSection: React.FC = () => {
               </p>
 
               <p className="text-[12px] text-slate-500 mt-0.5">
-                View detailed schemes, sessions and outcomes across all departments
+                View detailed schemes, sessions and outcomes across all
+                departments
               </p>
 
             </div>
