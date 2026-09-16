@@ -360,8 +360,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                 >
 
                   <img
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
-                    alt="DMPL Skills Team and Training Facility"
+                    src="/Images/About/dmpl-skills-training-programs-students.png" alt="DMPL Skills Training Programs Students"
                     className="
                       w-full h-full
                       object-cover
@@ -1023,7 +1022,6 @@ export const AboutPage: React.FC<AboutPageProps> = ({
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-3 mt-8">
-
             <button
               type="button"
               onClick={() => onOpenEnquiry()}
@@ -1063,21 +1061,16 @@ export const AboutPage: React.FC<AboutPageProps> = ({
               Visit Contact Page
               <ArrowRight className="w-4 h-4" />
             </Link>
-
           </div>
-
           {/* Tricolor */}
           <div className="flex justify-center items-center gap-1.5 mt-10">
 
             <span className="w-8 h-1 bg-[#ff9933] rounded-full" />
             <span className="w-8 h-1 bg-white rounded-full" />
             <span className="w-8 h-1 bg-[#138808] rounded-full" />
-
           </div>
-
         </div>
       </section>
-
     </div>
   );
 };
