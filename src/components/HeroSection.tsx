@@ -44,7 +44,7 @@ const HeroSection: React.FC = () => {
       subtitle: 'PMKVY 4.0',
       description:
         "Government of India's flagship skill development initiative. Empowering youth with industry-relevant training and nationally recognised certification.",
-      image: '/Images/BannerSlide/dmpl-pmkvy-4-0-skill-development-training1.png',
+      image: '/Images/BannerSlide/dmpl-pmkvy-4-0-skill-development-training.jpg',
       stats: [
         { label: 'Trainees Trained', value: '14,256+', icon: <Users className="w-4 h-4" /> },
         { label: 'Successfully Placed', value: '8,902+', icon: <Briefcase className="w-4 h-4" /> },
