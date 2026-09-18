@@ -346,7 +346,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
               aria-label="DMPL Skills Home"
             >
             <img
-  src="/Images/dmpl-skills-logo.png"
+  src="/Images/dmpl-skills.png"
   alt="DMPL SKILLS"
   className="
     block

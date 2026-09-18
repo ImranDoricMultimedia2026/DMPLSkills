@@ -138,12 +138,6 @@ const departmentMeta: Record<string, DepartmentMeta> = {
     category: 'Entrepreneurship',
   },
 
-  'haryana-skill-development-mission': {
-    name: 'Haryana Skill Development Mission',
-    shortName: 'HSDM',
-    icon: Award,
-    category: 'State Mission',
-  },
 
   'punjab-hunar-vikas-yojna': {
     name: 'Punjab Hunar Vikas Yojna',

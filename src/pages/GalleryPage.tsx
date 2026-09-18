@@ -2,7 +2,6 @@ import React, { useMemo, useState } from 'react';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { galleryData } from '../data/gallery';
 import { GalleryProject } from '../types';
-
 import {
   Images,
   Camera,
@@ -131,7 +130,6 @@ export const GalleryPage: React.FC = () => {
                 Project Gallery
               </span>
             </h1>
-
             <p className="mt-6 max-w-3xl text-base leading-8 text-slate-300 sm:text-lg">
               Explore project-wise photographs from DMPL Skills
               training programmes and skill development initiatives.
@@ -307,7 +305,7 @@ export const GalleryPage: React.FC = () => {
                     )}
 
                     {/* Gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#12335f]/90 via-transparent to-transparent" />
+                    <div className="absolute inset-0" />
 
                     {/* Category */}
                     <div className="absolute left-4 top-4">
